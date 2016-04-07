@@ -10,7 +10,11 @@ app.get("/", (request, response) => {
 });
 
 app.get("/bob/", (request, response) => {
-  response.end("Hello Bob\n");  
+  response.end("Hello Bob's\n");  
+});
+
+app.delete("/bob/", (request, response) => {
+  response.end("Delete Bob\n");  
 });
 
 app.post("/", (request, response) => {
